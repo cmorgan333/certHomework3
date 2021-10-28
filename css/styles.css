@@ -531,6 +531,7 @@ footer .footer-content .socials .icon-container .twit {
   margin-top: 100px;
   margin-bottom: 50px;
   display: flex;
+  background-color: chartreuse;
 }
 .browse-content .puppies-container .puppy-wrapper .puppy-pic {
   width: 300px;
@@ -541,6 +542,18 @@ footer .footer-content .socials .icon-container .twit {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.browse-content .puppies-container .puppy-wrapper .puppy-pic .button-border {
+  border-color: white;
+}
+.browse-content .puppies-container .puppy-wrapper .puppy-pic .button-border .button {
+  background-color: white;
+  color: #000;
+  font-size: 40px;
+  opacity: 0.8;
 }
 .browse-content .puppies-container .puppy-wrapper .puppy-one {
   background-image: url(../images/images/pupone.jpg);
@@ -595,25 +608,55 @@ footer .footer-content .socials .icon-container .twit {
   font-size: 18px;
   color: #000;
 }
+.browse-content .puppies-container .all-wrapper {
+  width: 500px;
+  min-height: 300px;
+  background-color: darkcyan;
+}
 .browse-content .puppies-container .button-holder {
   display: flex;
+  justify-content: space-around;
 }
-.browse-content .puppies-container .button {
-  background-color: #c45379;
-  border-radius: 30px;
+.browse-content .puppies-container .button-holder .button-holder .button {
+  margin-left: 10px;
+  margin-top: 10px;
+  background-color: #000;
+  border-radius: 14px;
   cursor: pointer;
-  width: 128px;
-  height: 42px;
+  width: 200px;
+  height: 65px;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: Arial, Bold;
+  font-size: 20px;
+  color: white;
 }
-.browse-content .puppies-container .button-holder .button {
-  margin-left: 10px;
-  margin-top: 10px;
+.browse-content .puppies-container .button-border {
+  width: 220px;
+  height: 85px;
+  border: 5px #000 solid;
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.browse-content .puppies-container .button-border .button {
+  background-color: #000;
+  border-radius: 14px;
+  cursor: pointer;
+  width: 200px;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Bold;
+  font-size: 30px;
+  color: white;
 }
 .browse-content .puppies-container .view {
   display: none;
+  background-color: white;
 }
 .browse-content .puppies-container .photo:hover .view {
   display: flex;
