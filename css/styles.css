@@ -595,6 +595,29 @@ footer .footer-content .socials .icon-container .twit {
   font-size: 18px;
   color: #000;
 }
+.browse-content .puppies-container .button-holder {
+  display: flex;
+}
+.browse-content .puppies-container .button {
+  background-color: #c45379;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 128px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.browse-content .puppies-container .button-holder .button {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.browse-content .puppies-container .view {
+  display: none;
+}
+.browse-content .puppies-container .photo:hover .view {
+  display: flex;
+}
 .browse-content .topofpage-container {
   max-width: 1700px;
   display: flex;
@@ -633,6 +656,11 @@ footer .footer-content .socials .icon-container .twit {
   .browse-content .puppy-background .puppies-container {
     flex-direction: column;
     align-items: center;
+  }
+}
+@media screen and (max-width: 960px) {
+  .photo .view {
+    display: flex;
   }
 }
 @media screen and (max-width: 675px) {
