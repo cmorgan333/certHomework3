@@ -1,0 +1,656 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16pxß;
+}
+
+.logo-holder {
+  background-color: #000;
+}
+.logo-holder .logo {
+  width: 107px;
+  height: 95px;
+  background-image: url(../images/logo/logo-pupplove.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: 99;
+  top: 20px;
+  left: 50px;
+}
+
+.navHolder {
+  position: relative;
+}
+
+.bars {
+  display: none;
+}
+
+.bars .bar {
+  display: block;
+  width: 25px;
+  margin: 5px 0;
+  background-color: white;
+  height: 3px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.bars.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.bars.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.bars.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+.links {
+  display: flex;
+  background-color: #000;
+  height: 140px;
+  width: 100vw;
+  overflow: hidden;
+  margin-right: -10px;
+  padding-left: 100px;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: height 0.4s, opacity 0.4s ease-in;
+}
+.links a {
+  text-decoration: none;
+  color: white;
+  font-family: Arial, Bold;
+  font-size: 30px;
+}
+
+.links.active {
+  opacity: 1;
+}
+
+@media screen and (max-width: 960px) {
+  .logo-holder {
+    height: 95px;
+    background-color: #000;
+  }
+
+  .navHolder {
+    background-color: #000;
+    margin-left: -10px;
+  }
+
+  .bar-position {
+    display: flex;
+    justify-content: right;
+    padding-right: 30px;
+  }
+
+  .bars {
+    display: block;
+    color: white;
+  }
+
+  .links {
+    background-color: #000;
+    height: 0;
+    opacity: 1;
+    margin-left: -10px;
+    padding-left: 30px;
+    flex-direction: column;
+    transition: height 0.4s, opacity 0.4s ease-in;
+  }
+
+  .links.active {
+    height: 300px;
+  }
+}
+footer {
+  min-height: 250px;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .footer-content {
+  width: 1600px;
+  min-height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer-content .footer-logo {
+  width: 107px;
+  height: 95px;
+  background-image: url(../images/logo/logo-pupplove.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+footer .footer-content .footer-box .footer-button {
+  width: 400px;
+  height: 60px;
+  border: 3px solid;
+  border-color: white;
+  border-radius: 14px;
+  margin-top: 20px;
+}
+footer .footer-content .footer-box .btn1 {
+  font-family: Arial, Bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+}
+footer .footer-content .footer-box .btn2 {
+  font-family: Arial, Bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+}
+footer .footer-content .socials h1 {
+  font-family: Arial, Bold;
+  font-size: 30px;
+  color: white;
+  margin-left: 25px;
+  margin-bottom: 25px;
+}
+footer .footer-content .socials .icon-container {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-content .socials .icon-container .icon {
+  width: 50px;
+  height: 50px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+footer .footer-content .socials .icon-container .fbook {
+  background-image: url(../images/socials/facebook.png);
+}
+footer .footer-content .socials .icon-container .insta {
+  background-image: url(../images/socials/insta.png);
+}
+footer .footer-content .socials .icon-container .twit {
+  background-image: url(../images/socials/twitter.png);
+}
+
+@media screen and (max-width: 1700px) {
+  footer .footer-content {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+@media screen and (max-width: 1030px) {
+  footer .footer-content {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  footer .footer-content .footer-logo {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  footer .footer-content .btn1 {
+    margin-bottom: 25px;
+  }
+  footer .footer-content .btn2 {
+    margin-bottom: 50px;
+  }
+  footer .footer-content .icon-container {
+    margin-bottom: 50px;
+  }
+}
+.hero {
+  width: 100%;
+  height: 1226px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/images/heropuppylove.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero .dialogue-box {
+  min-height: 320px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  opacity: 0.5;
+}
+.hero .dialogue-box .dialogue-button {
+  width: 700px;
+  height: 200px;
+  background-color: #000;
+  margin-right: 220px;
+  font-family: Arial, Bold;
+  font-size: 40px;
+  color: white;
+  border-radius: 23px;
+}
+.hero .dialogue-box .line-one {
+  width: 300px;
+  height: 40px;
+  margin: 35px auto;
+}
+.hero .dialogue-box .line-two {
+  width: 550px;
+  margin: 35px auto;
+}
+.hero .button-row {
+  height: 500px;
+  display: flex;
+}
+.hero .button-row .button-box {
+  width: 900px;
+  height: 160px;
+  border: 5px solid;
+  border-color: white;
+  border-radius: 27px;
+  margin-left: 100px;
+  margin-top: 350px;
+  display: flex;
+}
+.hero .button-row .button-box .button-fill {
+  background-color: white;
+  width: 880px;
+  height: 140px;
+  border-radius: 20px;
+  font-family: Arial, Bold;
+  font-size: 60px;
+  color: #000;
+  opacity: 0.6;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.hero .button-row .button-box .line-three {
+  width: 600px;
+  margin: 30px auto;
+}
+
+.mission {
+  height: 100px;
+  font-family: Arial, Bold;
+  font-size: 60px;
+  color: #000;
+  margin: 150px auto 150px auto;
+  text-align: center;
+}
+
+.profile-content {
+  min-height: 200px;
+  background-color: #bfbfbf;
+  margin-bottom: 150px;
+  padding-bottom: 100px;
+}
+.profile-content .pup-team {
+  height: 60px;
+  width: 400px;
+  font-family: Arial, Bold;
+  font-size: 40px;
+  color: #000;
+  margin: 0 auto 100px auto;
+  padding-top: 50px;
+}
+.profile-content .pup-profile {
+  width: 800px;
+  min-height: 300px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 50px;
+  background-color: #e4e4e4;
+  border-radius: 42px;
+}
+.profile-content .pup-profile .pupimage-container {
+  min-height: 300px;
+  width: 300px;
+}
+.profile-content .pup-profile .pupimage-container .pup-image {
+  width: 258px;
+  height: 250px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 0;
+  margin-top: 0;
+}
+.profile-content .pup-profile .pup1 {
+  background-image: url(../images/images/pupprofileone.png);
+}
+.profile-content .pup-profile .pup2 {
+  background-image: url(../images/images/pupprofile3.png);
+}
+.profile-content .pup-profile .pup-content {
+  width: 400px;
+  min-height: 100px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.profile-content .pup-profile .pup-content h1 {
+  font-family: Arial, Bold;
+  font-size: 40px;
+  color: #000;
+  margin-top: 25px;
+}
+.profile-content .pup-profile .pup-content p {
+  font-family: Arial, Bold;
+  font-size: 20px;
+  color: #000;
+  letter-spacing: 0.4px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.topofpage-container {
+  max-width: 1700px;
+  display: flex;
+  justify-content: center;
+}
+.topofpage-container .topofpage-border {
+  width: 400px;
+  height: 200px;
+  border: 5px solid;
+  border-color: #000;
+  border-radius: 20px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 100px auto;
+}
+.topofpage-container .topofpage-border .topofpage-fill {
+  width: 380px;
+  height: 180px;
+  border-radius: 14px;
+  background-color: #000;
+  font-family: Arial, Bold;
+  font-size: 60px;
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+}
+
+@media screen and (max-width: 1780px) {
+  .hero .dialogue-box {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    background-color: #000;
+    opacity: 0.7;
+  }
+  .hero .dialogue-box .dialogue-button {
+    width: 100%;
+    font-family: Arial, Bold;
+    font-size: 40px;
+    color: white;
+    margin: 0 auto;
+    border-radius: 0;
+  }
+  .hero .dialogue-box .dialogue-button p {
+    opacity: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .hero .button-row {
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+  }
+  .hero .button-row .button-box {
+    width: 400px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero .button-row .button-box .button-fill {
+    width: 380px;
+    height: 80px;
+    font-size: 30px;
+    margin: 0 auto;
+    padding-left: 20px;
+    opacity: 100%;
+  }
+}
+@media screen and (max-width: 950px) {
+  .hero .dialogue-box {
+    display: flex;
+    justify-content: center;
+  }
+  .hero .dialogue-box .dialogue-button {
+    font-size: 30px;
+    margin-left: 100px;
+  }
+  .hero .button-row {
+    max-width: 950px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero .button-row .button-box {
+    width: 400px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+  }
+  .hero .button-row .button-box .button-fill {
+    width: 380px;
+    height: 80px;
+    font-size: 30px;
+    margin: 0 auto;
+    padding-left: 20px;
+    opacity: 100%;
+  }
+
+  .profile-content .pup-profile {
+    max-width: 801px;
+    min-height: 200px;
+    flex-direction: column;
+  }
+  .profile-content .pup-profile .pupimage-container {
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 816px) {
+  .profile-content .pup-profile {
+    max-width: 450px;
+    min-height: 200px;
+    flex-direction: column;
+  }
+  .profile-content .pup-profile .pupimage-container {
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 750px) {
+  .mission {
+    font-size: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+@media screen and (max-width: 630px) {
+  .hero .button-row .button-box {
+    width: 300px;
+  }
+  .hero .button-row .button-box .button-fill {
+    width: 280px;
+    font-size: 25px;
+  }
+}
+.browse-content h1 {
+  width: 1100px;
+  font-family: Arial, Bold;
+  font-size: 60px;
+  color: #000;
+  margin: 100px auto 50px auto;
+}
+.browse-content .puppy-background {
+  background-color: #c45379;
+  margin-bottom: 100px;
+}
+.browse-content .puppies-container {
+  max-width: 1200px;
+  min-height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto 50px auto;
+  flex-wrap: wrap;
+}
+.browse-content .puppies-container .puppy-wrapper {
+  width: 500px;
+  min-height: 300px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  display: flex;
+}
+.browse-content .puppies-container .puppy-wrapper .puppy-pic {
+  width: 300px;
+  height: 300px;
+  border: 5px solid;
+  border-color: #000;
+  border-radius: 10px 0 0 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.browse-content .puppies-container .puppy-wrapper .puppy-one {
+  background-image: url(../images/images/pupone.jpg);
+}
+.browse-content .puppies-container .puppy-wrapper .puppy-two {
+  background-image: url(../images/images/puptwo.jpg);
+}
+.browse-content .puppies-container .puppy-wrapper .puppy-three {
+  background-image: url(../images/images/pupthree.jpg);
+}
+.browse-content .puppies-container .puppy-wrapper .puppy-four {
+  background-image: url(../images/images/pupfour.jpg);
+}
+.browse-content .puppies-container .puppy-wrapper .puppy-five {
+  background-image: url(../images/images/pupfive.jpg);
+}
+.browse-content .puppies-container .puppy-wrapper .puppy-six {
+  background-image: url(../images/images/pupsix.jpg);
+}
+.browse-content .puppies-container .puppy-wrapper .puppy-seven {
+  background-image: url(../images/images/pupseven.jpg);
+}
+.browse-content .puppies-container .puppy-wrapper .puppy-eight {
+  background-image: url(../images/images/pupeight.jpg);
+}
+.browse-content .puppies-container .puppy-wrapper .puppy-nine {
+  background-image: url(../images/images/pupnine.jpg);
+}
+.browse-content .puppies-container .puppy-wrapper .puppy-ten {
+  background-image: url(../images/images/pupten.jpg);
+}
+.browse-content .puppies-container .puppy-wrapper .puppy-description {
+  width: 200px;
+  min-height: 300px;
+  border: 5px solid;
+  border-left: none;
+  border-color: #000;
+  border-radius: 0 10px 10px 0;
+  background-color: white;
+}
+.browse-content .puppies-container .puppy-wrapper .puppy-description h1 {
+  width: 170px;
+  font-family: Arial, Bold;
+  font-size: 20px;
+  color: #000;
+  margin-top: 15px;
+}
+.browse-content .puppies-container .puppy-wrapper .puppy-description p {
+  width: 170px;
+  margin-left: 10px;
+  font-family: Arial;
+  font-size: 18px;
+  color: #000;
+}
+.browse-content .topofpage-container {
+  max-width: 1700px;
+  display: flex;
+  justify-content: center;
+}
+.browse-content .topofpage-container .topofpage-border {
+  width: 400px;
+  height: 125px;
+  border: 5px solid;
+  border-color: #000;
+  border-radius: 20px;
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 100px auto;
+}
+.browse-content .topofpage-container .topofpage-border .topofpage-fill {
+  width: 380px;
+  height: 105px;
+  border-radius: 14px;
+  background-color: #000;
+  font-family: Arial, Bold;
+  font-size: 60px;
+  color: white;
+  text-align: center;
+  padding-top: 15px;
+}
+
+@media screen and (max-width: 1300px) {
+  .browse-content .puppy-title {
+    margin-left: 100px;
+  }
+}
+@media screen and (max-width: 1330px) {
+  .browse-content .puppy-background .puppies-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 675px) {
+  .browse-content h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .puppy-container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .puppy-container .puppy-wrapper {
+    width: 350px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .puppy-container .puppy-wrapper .puppy-description {
+    width: 125px;
+  }
+}

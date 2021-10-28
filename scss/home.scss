@@ -1,0 +1,344 @@
+.hero {
+	width: 100%;
+	height: 1226px;
+	background-image: linear-gradient(to right, $overlay, $overlay), url(../images/images/heropuppylove.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	.dialogue-box {
+		min-height: 320px;
+		display: flex;
+		justify-content: right;
+		align-items: center;
+		opacity: .5;
+		.dialogue-button {
+			width: 700px;
+			height: 200px;
+			background-color: #000;
+			margin-right: 220px;
+			// opacity: .5;
+			font-family: Arial, Bold;
+			font-size: 40px;
+			color: white;
+			border-radius: 23px;
+
+			p {
+				// margin-top: 15px;
+			}
+		}
+
+		.line-one {
+			width: 300px;
+			height: 40px;
+			margin: 35px auto;
+		}
+		.line-two {
+			width: 550px;
+			margin: 35px auto;
+		}
+	}
+
+	.button-row {
+		height: 500px;
+		display: flex;
+		.button-box {
+			width: 900px;
+			height: 160px;
+			// background-color: white;
+			border: 5px solid;
+			border-color: white;
+			border-radius: 27px;
+			margin-left: 100px;
+			margin-top: 350px;
+			display: flex;
+			// justify-content: center;
+			// align-items: center;
+
+			.button-fill {
+				background-color: white;
+				width: 880px;
+				height: 140px;
+				border-radius: 20px;
+				font-family: Arial, Bold;
+				font-size: 60px;
+				color: #000;
+				opacity: .6;
+				margin-top: 5px;
+				margin-left: 5px;
+			}
+			.line-three {
+				width: 600px;
+				margin: 30px auto;
+			}
+		}
+	}
+}
+
+// =======OUR MISSION SECTION======//
+.mission {
+	height: 100px;
+	font-family: Arial, Bold;
+	font-size: 60px;
+	color: #000;
+	margin: 150px auto 150px auto;
+	text-align: center;
+}
+
+// =======TEAM PROFILES========//
+.profile-content {
+	min-height: 200px;
+	background-color: #bfbfbf;
+	margin-bottom: 150px;
+	padding-bottom: 100px;
+	.pup-team {
+		height: 60px;
+		width: 400px;
+		font-family: Arial, Bold;
+		font-size: 40px;
+		color: #000;
+		margin: 0 auto 100px auto;
+		padding-top: 50px;
+	}
+	.pup-profile {
+		width: 800px;
+		min-height: 300px;
+		// opacity: .5;
+		margin: 50px auto;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		margin-bottom: 50px;
+		background-color: #e4e4e4;
+		border-radius: 42px;
+
+		.pupimage-container {
+			min-height: 300px;
+			width: 300px;
+
+			.pup-image {
+				width: 258px;
+				height: 250px;
+				background-position: center;
+				background-size: cover;
+				background-repeat: no-repeat;
+				margin-left: 0;
+				margin-top: 0;
+			}
+		}
+
+		.pup1 {
+			background-image: url(../images/images/pupprofileone.png);
+		}
+		.pup2 {
+			background-image: url(../images/images/pupprofile3.png);
+		}
+
+		.pup-content {
+			width: 400px;
+			min-height: 100px;
+			margin-bottom: 50px;
+			margin-top: 50px;
+
+			h1 {
+				font-family: Arial, Bold;
+				font-size: 40px;
+				color: #000;
+				margin-top: 25px;
+			}
+			p {
+				font-family: Arial, Bold;
+				font-size: 20px;
+				color: #000;
+				letter-spacing: .4px;
+				line-height: 30px;
+				margin-bottom: 30px;
+			}
+		}
+	}
+}
+
+// ===BROWSE CUTE PUPPIES! BUTTON====//
+.topofpage-container {
+	max-width: 1700px;
+	display: flex;
+	justify-content: center;
+	.topofpage-border {
+		width: 400px;
+		height: 200px;
+		border: 5px solid;
+		border-color: #000;
+		border-radius: 20px;
+		margin-bottom: 100px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto 100px auto;
+		.topofpage-fill {
+			width: 380px;
+			height: 180px;
+			border-radius: 14px;
+			background-color: #000;
+			font-family: Arial, Bold;
+			font-size: 60px;
+			color: white;
+			text-align: center;
+			padding-top: 15px;
+		}
+	}
+}
+
+// ======RESPONSIVENESS=======//
+
+@media screen and (max-width: 1780px) {
+	.hero {
+		.dialogue-box {
+			width: 100%;
+			height: 50px;
+			display: flex;
+			background-color: #000;
+			opacity: .7;
+			// justify-content: center;
+			// justify-content: right;
+			// align-items: center;
+			// opacity: .5;
+			.dialogue-button {
+				width: 100%;
+				// height: 200px;
+				// background-color: #000;
+				// margin-right: 220px;
+				// opacity: .5;
+				font-family: Arial, Bold;
+				font-size: 40px;
+				color: white;
+				// opacity: .8;
+				margin: 0 auto;
+				border-radius: 0;
+
+				p {
+					opacity: none;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.hero {
+		.button-row {
+			// height: 200px;
+			max-width: 1200px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			opacity: .5;
+			.button-box {
+				width: 400px;
+				height: 100px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				// margin-bottom: 50px;
+
+				.button-fill {
+					width: 380px;
+					height: 80px;
+					font-size: 30px;
+					margin: 0 auto;
+					padding-left: 20px;
+					opacity: 100%;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 950px) {
+	.hero {
+		.dialogue-box {
+			display: flex;
+			justify-content: center;
+			.dialogue-button {
+				font-size: 30px;
+				margin-left: 100px;
+			}
+		}
+		.button-row {
+			// height: 200px;
+			max-width: 950px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			// opacity: .7;
+			.button-box {
+				width: 400px;
+				height: 100px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-right: 100px;
+				// margin-bottom: 50px;
+
+				.button-fill {
+					width: 380px;
+					height: 80px;
+					font-size: 30px;
+					margin: 0 auto;
+					padding-left: 20px;
+					opacity: 100%;
+				}
+			}
+		}
+	}
+	.profile-content {
+		.pup-profile {
+			max-width: 801px;
+			min-height: 200px;
+			flex-direction: column;
+			// align-items: center;
+			// justify-content: space-around;
+			.pupimage-container {
+				display: flex;
+				align-items: center;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 816px) {
+	.profile-content {
+		.pup-profile {
+			max-width: 450px;
+			min-height: 200px;
+			flex-direction: column;
+			// align-items: center;
+			// justify-content: space-around;
+			.pupimage-container {
+				display: flex;
+				align-items: center;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.mission {
+		font-size: 30px;
+		margin-left: 100px;
+		margin-right: 100px;
+	}
+}
+
+@media screen and (max-width: 630px) {
+	.hero {
+		.button-row {
+			.button-box {
+				width: 300px;
+				.button-fill {
+					width: 280px;
+					font-size: 25px;
+				}
+			}
+		}
+	}
+}

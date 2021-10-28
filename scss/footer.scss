@@ -1,0 +1,110 @@
+footer {
+	min-height: 250px;
+	background-color: #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.footer-content {
+		width: 1600px;
+		min-height: 200px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.footer-logo {
+			width: 107px;
+			height: 95px;
+			background-image: url(../images/logo/logo-pupplove.png);
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		.footer-box {
+			.footer-button {
+				width: 400px;
+				height: 60px;
+				border: 3px solid;
+				border-color: white;
+				border-radius: 14px;
+				margin-top: 20px;
+			}
+			.btn1 {
+				font-family: Arial, Bold;
+				font-size: 30px;
+				color: white;
+				text-align: center;
+				padding-top: 10px;
+			}
+			.btn2 {
+				font-family: Arial, Bold;
+				font-size: 30px;
+				color: white;
+				text-align: center;
+				padding-top: 10px;
+			}
+		}
+		.socials {
+			h1 {
+				font-family: Arial, Bold;
+				font-size: 30px;
+				color: white;
+				margin-left: 25px;
+				margin-bottom: 25px;
+			}
+			.icon-container {
+				width: 200px;
+				display: flex;
+				justify-content: space-between;
+				.icon {
+					width: 50px;
+					height: 50px;
+					background-position: center;
+					background-size: cover;
+					background-repeat: no-repeat;
+				}
+				.fbook {
+					background-image: url(../images/socials/facebook.png);
+				}
+				.insta {
+					background-image: url(../images/socials/insta.png);
+				}
+				.twit {
+					background-image: url(../images/socials/twitter.png);
+				}
+			}
+		}
+	}
+}
+
+// ======RESPONSIVENESS=======//
+
+@media screen and (max-width: 1700px) {
+	footer {
+		.footer-content {
+			margin-left: 100px;
+			margin-right: 100px;
+		}
+	}
+}
+
+@media screen and (max-width: 1030px) {
+	footer {
+		.footer-content {
+			flex-direction: column;
+			justify-content: space-around;
+			.footer-logo {
+				margin-top: 50px;
+				margin-bottom: 50px;
+			}
+			.btn1 {
+				margin-bottom: 25px;
+			}
+			.btn2 {
+				margin-bottom: 50px;
+			}
+			.icon-container {
+				margin-bottom: 50px;
+			}
+		}
+	}
+}

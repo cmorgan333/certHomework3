@@ -1,0 +1,108 @@
+.logo-holder {
+	// height: 40px;
+	background-color: #000;
+	.logo {
+		width: 107px;
+		height: 95px;
+		background-image: url(../images/logo/logo-pupplove.png);
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		position: absolute;
+		z-index: 99;
+		top: 20px;
+		left: 50px;
+	}
+}
+.navHolder {
+	position: relative;
+	// left: 10px;
+	// width: 1000px;
+	// background-color: chartreuse;
+}
+
+.bars {
+	display: none;
+}
+
+.bars .bar {
+	display: block;
+	width: 25px;
+	margin: 5px 0;
+	background-color: white;
+	height: 3px;
+	border-radius: 5px;
+	transition: all .3s ease-in-out;
+}
+
+.bars.active .bar:nth-child(2) {
+	opacity: 0;
+}
+
+.bars.active .bar:nth-child(1) {
+	transform: translateY(8px) rotate(45deg);
+}
+
+.bars.active .bar:nth-child(3) {
+	transform: translateY(-8px) rotate(-45deg);
+}
+
+.links {
+	display: flex;
+	background-color: #000;
+	height: 140px;
+	width: 100vw;
+	// width: 1000px;
+	overflow: hidden;
+	margin-right: -10px;
+	padding-left: 100px;
+	align-items: center;
+	justify-content: space-evenly;
+	transition: height .4s, opacity .4s ease-in;
+
+	a {
+		text-decoration: none;
+		color: white;
+		font-family: Arial, Bold;
+		font-size: 30px;
+	}
+}
+
+.links.active {
+	// height: 300px;
+	opacity: 1;
+}
+
+// ======RESPONSIVENESS=====//
+@media screen and (max-width: 960px) {
+	.logo-holder {
+		height: 95px;
+		background-color: #000;
+	}
+	.navHolder {
+		background-color: #000;
+		margin-left: -10px;
+	}
+	.bar-position {
+		display: flex;
+		justify-content: right;
+		padding-right: 30px;
+	}
+	.bars {
+		display: block;
+		color: white;
+	}
+
+	.links {
+		background-color: #000;
+		height: 0;
+		opacity: 1;
+		margin-left: -10px;
+		padding-left: 30px;
+		flex-direction: column;
+		transition: height .4s, opacity .4s ease-in;
+	}
+	.links.active {
+		height: 300px;
+	}
+}
