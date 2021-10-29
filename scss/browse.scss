@@ -42,24 +42,21 @@
 				justify-content: center;
 				align-items: center;
 
-				.view {
-					background-color: white;
-					border-radius: 14px;
-					cursor: pointer;
-					width: 200px;
-					height: 65px;
-					padding-left: 65px;
-					padding-top: 15px;
-					opacity: .8;
-					font-family: Arial, Bold;
-					font-size: 30px;
-					color: #000;
-					display: none;
-				}
+				// .view {
+				// 	background-color: white;
+				// 	border-radius: 14px;
+				// 	cursor: pointer;
+				// 	width: 200px;
+				// 	height: 65px;
+				// 	padding-left: 65px;
+				// 	padding-top: 15px;
+				// 	opacity: .8;
+				// 	font-family: Arial, Bold;
+				// 	font-size: 30px;
+				// 	color: #000;
+				// 	display: none;
+				// }
 			}
-		}
-		.puppy-pic:hover .view {
-			display: flex;
 		}
 
 		.puppy-one {
@@ -133,29 +130,38 @@
 	.button-holder {
 		display: flex;
 		justify-content: space-between;
+	}
 
-		.button-border {
-			width: 220px;
-			height: 85px;
-			border: 5px #000 solid;
-			border-radius: 18px;
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			.button {
-				background-color: #000;
-				border-radius: 14px;
-				cursor: pointer;
-				width: 200px;
-				height: 65px;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				font-family: Arial, Bold;
-				font-size: 30px;
-				color: white;
-			}
-		}
+	// .button-border {
+	// 	width: 220px;
+	// 	height: 85px;
+	// 	border: 5px #000 solid;
+	// 	border-radius: 18px;
+	// 	display: flex;
+	// 	justify-content: center;
+	// 	align-items: center;
+	// }
+	.button {
+		background-color: #000;
+		border-radius: 14px;
+		cursor: pointer;
+		width: 200px;
+		height: 65px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-family: Arial, Bold;
+		font-size: 30px;
+		color: white;
+	}
+	.view {
+		background-color: white;
+		color: #000;
+		opacity: .8;
+		display: none;
+	}
+	.puppy-pic:hover .view {
+		display: flex;
 	}
 }
 
