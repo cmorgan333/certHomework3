@@ -531,7 +531,6 @@ footer .footer-content .socials .icon-container .twit {
   margin-top: 100px;
   margin-bottom: 50px;
   display: flex;
-  background-color: chartreuse;
 }
 .browse-content .puppies-container .puppy-wrapper .puppy-pic {
   width: 300px;
@@ -546,46 +545,54 @@ footer .footer-content .socials .icon-container .twit {
   justify-content: center;
   align-items: center;
 }
-.browse-content .puppies-container .puppy-wrapper .puppy-pic .button-border {
-  border-color: white;
-}
-.browse-content .puppies-container .puppy-wrapper .puppy-pic .button-border .button {
+.browse-content .puppies-container .puppy-wrapper .puppy-pic .view {
   background-color: white;
-  color: #000;
-  font-size: 40px;
+  border-radius: 14px;
+  cursor: pointer;
+  width: 200px;
+  height: 65px;
+  padding-left: 65px;
+  padding-top: 15px;
   opacity: 0.8;
+  font-family: Arial, Bold;
+  font-size: 30px;
+  color: #000;
+  display: none;
 }
-.browse-content .puppies-container .puppy-wrapper .puppy-one {
+.browse-content .puppies-container .puppy-wrapper .puppy-pic:hover .view {
+  display: flex;
+}
+.browse-content .puppies-container .puppy-one {
   background-image: url(../images/images/pupone.jpg);
 }
-.browse-content .puppies-container .puppy-wrapper .puppy-two {
+.browse-content .puppies-container .puppy-two {
   background-image: url(../images/images/puptwo.jpg);
 }
-.browse-content .puppies-container .puppy-wrapper .puppy-three {
+.browse-content .puppies-container .puppy-three {
   background-image: url(../images/images/pupthree.jpg);
 }
-.browse-content .puppies-container .puppy-wrapper .puppy-four {
+.browse-content .puppies-container .puppy-four {
   background-image: url(../images/images/pupfour.jpg);
 }
-.browse-content .puppies-container .puppy-wrapper .puppy-five {
+.browse-content .puppies-container .puppy-five {
   background-image: url(../images/images/pupfive.jpg);
 }
-.browse-content .puppies-container .puppy-wrapper .puppy-six {
+.browse-content .puppies-container .puppy-six {
   background-image: url(../images/images/pupsix.jpg);
 }
-.browse-content .puppies-container .puppy-wrapper .puppy-seven {
+.browse-content .puppies-container .puppy-seven {
   background-image: url(../images/images/pupseven.jpg);
 }
-.browse-content .puppies-container .puppy-wrapper .puppy-eight {
+.browse-content .puppies-container .puppy-eight {
   background-image: url(../images/images/pupeight.jpg);
 }
-.browse-content .puppies-container .puppy-wrapper .puppy-nine {
+.browse-content .puppies-container .puppy-nine {
   background-image: url(../images/images/pupnine.jpg);
 }
-.browse-content .puppies-container .puppy-wrapper .puppy-ten {
+.browse-content .puppies-container .puppy-ten {
   background-image: url(../images/images/pupten.jpg);
 }
-.browse-content .puppies-container .puppy-wrapper .puppy-description {
+.browse-content .puppies-container .puppy-description {
   width: 200px;
   min-height: 300px;
   border: 5px solid;
@@ -594,45 +601,29 @@ footer .footer-content .socials .icon-container .twit {
   border-radius: 0 10px 10px 0;
   background-color: white;
 }
-.browse-content .puppies-container .puppy-wrapper .puppy-description h1 {
+.browse-content .puppies-container .puppy-description h1 {
   width: 170px;
   font-family: Arial, Bold;
   font-size: 20px;
   color: #000;
   margin-top: 15px;
 }
-.browse-content .puppies-container .puppy-wrapper .puppy-description p {
+.browse-content .puppies-container .puppy-description p {
   width: 170px;
   margin-left: 10px;
   font-family: Arial;
   font-size: 18px;
   color: #000;
 }
-.browse-content .puppies-container .all-wrapper {
+.browse-content .all-wrapper {
   width: 500px;
-  min-height: 300px;
-  background-color: darkcyan;
+  min-height: 200px;
 }
-.browse-content .puppies-container .button-holder {
+.browse-content .button-holder {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
-.browse-content .puppies-container .button-holder .button-holder .button {
-  margin-left: 10px;
-  margin-top: 10px;
-  background-color: #000;
-  border-radius: 14px;
-  cursor: pointer;
-  width: 200px;
-  height: 65px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: Arial, Bold;
-  font-size: 20px;
-  color: white;
-}
-.browse-content .puppies-container .button-border {
+.browse-content .button-holder .button-border {
   width: 220px;
   height: 85px;
   border: 5px #000 solid;
@@ -641,7 +632,7 @@ footer .footer-content .socials .icon-container .twit {
   justify-content: center;
   align-items: center;
 }
-.browse-content .puppies-container .button-border .button {
+.browse-content .button-holder .button-border .button {
   background-color: #000;
   border-radius: 14px;
   cursor: pointer;
@@ -654,19 +645,13 @@ footer .footer-content .socials .icon-container .twit {
   font-size: 30px;
   color: white;
 }
-.browse-content .puppies-container .view {
-  display: none;
-  background-color: white;
-}
-.browse-content .puppies-container .photo:hover .view {
-  display: flex;
-}
-.browse-content .topofpage-container {
+
+.topofpage-container {
   max-width: 1700px;
   display: flex;
   justify-content: center;
 }
-.browse-content .topofpage-container .topofpage-border {
+.topofpage-container .topofpage-border {
   width: 400px;
   height: 125px;
   border: 5px solid;
@@ -678,7 +663,7 @@ footer .footer-content .socials .icon-container .twit {
   align-items: center;
   margin: 0 auto 100px auto;
 }
-.browse-content .topofpage-container .topofpage-border .topofpage-fill {
+.topofpage-container .topofpage-border .topofpage-fill {
   width: 380px;
   height: 105px;
   border-radius: 14px;
@@ -702,7 +687,7 @@ footer .footer-content .socials .icon-container .twit {
   }
 }
 @media screen and (max-width: 960px) {
-  .photo .view {
+  .puppy-pic .view {
     display: flex;
   }
 }
