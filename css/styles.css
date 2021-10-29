@@ -363,12 +363,12 @@ footer .footer-content .socials .icon-container .twit {
   margin-bottom: 30px;
 }
 
-.topofpage-container {
+.pup-pics-container {
   max-width: 1700px;
   display: flex;
   justify-content: center;
 }
-.topofpage-container .topofpage-border {
+.pup-pics-container .pup-pics-border {
   width: 400px;
   height: 200px;
   border: 5px solid;
@@ -380,7 +380,7 @@ footer .footer-content .socials .icon-container .twit {
   align-items: center;
   margin: 0 auto 100px auto;
 }
-.topofpage-container .topofpage-border .topofpage-fill {
+.pup-pics-container .pup-pics-border .pup-pics-fill {
   width: 380px;
   height: 180px;
   border-radius: 14px;
