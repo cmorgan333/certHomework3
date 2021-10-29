@@ -14,12 +14,6 @@ var MODEL = (function(){
         }
     };
 
-    // var _nameId = function(idName){
-
-    //     if(idName != "") {
-    //         $.get(".button " + "id")
-    //     };
-    // };
         return{
             updateView: _updateView,
         };

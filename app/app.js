@@ -5,13 +5,8 @@ function changeRoute() {
     MODEL.updateView(pageID)
 }
 
-function buttonListener (){
-let btnId = (".button ") + id
 
-//     $(".button").click(function (e) {
-// console.log (id)
-//     })
-}
+
 
 function initURLListener(){
     $(window).on("hashchange", changeRoute);
